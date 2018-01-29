@@ -18,7 +18,12 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name){
+  if(name === 'Tyler'){
+    return true;
+  }
+  return false;
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -28,7 +33,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName(){
+  var name = prompt();
+  return name;
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -41,7 +49,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome(){
+  alert("Welcome, " + getName());
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -51,7 +61,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+"Parameters are are what the function asks for and arguments are what actually gets passed in."
 
 
 ////////// PROBLEM 5 //////////
@@ -61,7 +71,8 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+"0, NaN, null, false, undefined"
+"Use an if statement and not it"
 
 
 ////////// PROBLEM 6 //////////
@@ -71,7 +82,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+function myName(){
+  return "Devin";
+}  
 
 
 /*
@@ -79,7 +92,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var newMyName = myName;
 
 
 /*
@@ -87,7 +100,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName);
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +110,12 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn(){
+  var anon = function(){
+    return "Devin";
+  };
+  return anon;
+}
 
 
 /*
@@ -105,7 +123,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var innerFn = outerFn();
 
 
 /* 
@@ -113,3 +131,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn();
